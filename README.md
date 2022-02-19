@@ -69,6 +69,3 @@ Note: Add recommended extensions to [exensions.json](./.vscode/extensions.json).
 - Install a node version, e.g. `nvm install v16.13.2`.
 - Run `nvm use` in root folder and node will be changed to version in [.nvmrc](/.nvmrc).  
   Also check out Deeper Shell Integration [here](https://github.com/nvm-sh/nvm#deeper-shell-integration).
-
-docker run --rm -p 3000:3000 --volume :/usr/src/app/ -it upwork-ecoista
-docker-compose -f docker-compose.dev.yml

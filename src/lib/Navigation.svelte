@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+
 	export let logo_url: string = '';
 
 	interface NavLink {
@@ -7,12 +8,7 @@
 		path: string;
 	}
 
-	const nav_links: NavLink[] = [
-		{
-			title: 'Landing',
-			path: '/'
-		}
-	];
+	export let nav_links: NavLink[];
 </script>
 
 <nav class="navbar navbar-expand-sm navbar-light bg-light">

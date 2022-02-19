@@ -2,7 +2,7 @@
 </script>
 
 <svelte:head>
-	<title>Landing - Demo</title>
+	<title>Landing - Template</title>
 </svelte:head>
 
 <div class="container">
