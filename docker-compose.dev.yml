@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  webserver:
+    image: template-svelte-ts-docker-dev
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development

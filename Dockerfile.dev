@@ -1,0 +1,19 @@
+
+
+FROM node:16.14.0
+ENV NODE_ENV=development
+
+WORKDIR /usr/src/app
+
+# Copy package.json, lock file
+COPY package*.json .
+
+# Install packages
+RUN npm ci
+
+# Copy all files
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]
