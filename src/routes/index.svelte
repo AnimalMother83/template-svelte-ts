@@ -8,7 +8,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<h1 class="title">Landing</h1>
+			<h1>Landing</h1>
 			<p>
 				Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
 				est laborum et dolorum fuga.

@@ -7,7 +7,12 @@
 		path: string;
 	}
 
-	const nav_links: NavLink[] = [];
+	const nav_links: NavLink[] = [
+		{
+			title: 'Landing',
+			path: '/'
+		}
+	];
 </script>
 
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
