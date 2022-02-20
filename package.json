@@ -2,8 +2,8 @@
 	"name": "template-svelte-ts-docker",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev --host 0.0.0.0",
-		"dev:docker": "docker-compose -f docker-compose.dev.yml up",
+		"dev": "svelte-kit dev",
+		"dev:docker": "docker-compose -f docker-compose.dev.yml up --build",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
