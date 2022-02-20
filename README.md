@@ -1,5 +1,16 @@
 # template-svelte-ts-docker
 
+Setup
+
+- Svelte-kit
+- Bootstrap 5
+- SASS
+- TypeScript
+- Docker
+- Github actions
+  - CI pipeline
+  - Dependabot (weekly)
+
 ## Requirements
 
 - node v16.14.0 (LTS)
