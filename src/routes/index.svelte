@@ -13,9 +13,17 @@
 				Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
 				est laborum et dolorum fuga.
 			</p>
+
+			<div class="m-2">
+				<button class="btn btn-primary"> btn-primaty </button>
+			</div>
+
+			<div class="m-2">
+				<button class="btn btn-example"> btn-example </button>
+			</div>
 		</div>
 	</div>
 </div>
 
-<style>
+<style type="scss">
 </style>

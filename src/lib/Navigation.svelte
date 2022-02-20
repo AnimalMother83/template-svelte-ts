@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	export let logo_url: string = '';
+	export let logo_url = '';
 
 	interface NavLink {
 		title: string;
@@ -11,7 +11,7 @@
 	export let nav_links: NavLink[];
 </script>
 
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
 	<div class="container-fluid">
 		{#if logo_url}
 			<a class="navbar-brand" href="/">
@@ -45,5 +45,5 @@
 	</div>
 </nav>
 
-<style>
+<style type="scss">
 </style>

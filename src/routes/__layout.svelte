@@ -33,7 +33,7 @@
 	<Footer text={'© 2022 Template'} />
 </div>
 
-<style>
+<style type="scss">
 	.root {
 		min-height: 100vh;
 		display: flex;
