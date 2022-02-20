@@ -1,2 +1,8 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/bootstrap';
+
+$example: #9f25be;
+
+.btn-example {
+	@include button-variant($background: $example, $border: $example, $color: $white);
+}
