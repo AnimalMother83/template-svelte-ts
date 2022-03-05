@@ -1,4 +1,4 @@
-# template-svelte-ts-docker
+# template-svelte-ts
 
 Setup
 
@@ -56,7 +56,7 @@ See [rules](https://eslint.org/docs/rules/).
 Tests are setup using [Jest](https://jestjs.io/) and Svelte Testing Library, which is a part of [Testing Library](https://testing-library.com/).
 
 - Run tests with `npm run test`, or `npm run test:watch`.
-- Configuration in [.jest.config.json](./.jest.config.json).
+- Configuration in [.jest.config.json](./app/.jest.config.json).
 
 See [docs](https://testing-library.com/docs/).
 
@@ -75,11 +75,49 @@ Packages used for testing
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-Note: Add recommended extensions to [exensions.json](./.vscode/extensions.json).
+Note: Add recommended extensions to [exensions.json](./app/.vscode/extensions.json).
 
 ### nvm (Node Version Manager)
 
 - Install nvm ([instructions](https://github.com/nvm-sh/nvm)).
 - Install a node version, e.g. `nvm install v16.13.2`.
-- Run `nvm use` in root folder and node will be changed to version in [.nvmrc](/.nvmrc).  
+- Run `nvm use` in root folder and node will be changed to version in [.nvmrc](./app/.nvmrc).  
   Also check out Deeper Shell Integration [here](https://github.com/nvm-sh/nvm#deeper-shell-integration).
+
+## Infrastructure
+
+Infrastructure by code using [terraform](https://www.terraform.io/intro).
+
+#### Setup
+
+##### Mac OS
+
+- 1. Update brew `brew update`
+
+- 2. Install Terraform
+
+  - Add hashicorp tap `brew tap hashicorp/tap`
+  - Install `brew install hashicorp/tap/terraform`
+
+- 3. Install Azure CLI
+
+  - Install `brew install azure-cli`
+
+- 4. Login to Azure `az login`
+
+#### tfenv
+
+Install
+
+- `brew install tfenv`
+
+`git clone https://github.com/tfutils/tfenv.git ~/.tfenv`
+`echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.bash_profile`
+`echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.zprofile`
+
+https://github.com/tfutils/tfenv
+
+- Install version `tfenv install 1.1.6`
+- Activate version `tfenv use 1.1.6`
+
+###
