@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: "app/.nvmrc"
       - name: Install dependencies
         run: npm install
       - name: Lint check
