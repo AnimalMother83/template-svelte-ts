@@ -10,7 +10,7 @@ Setup
 - Tests
 - Github actions
   - CI pipeline
-  - Dependabot (weekly)
+  - Dependabot (monthly)
 
 ## Requirements
 
