@@ -1,7 +1,10 @@
 <script lang="ts">
+	import Footer from '$lib/Footer.svelte';
+	import Navigation from '$lib/Navigation.svelte';
+
 	import '../app.scss';
-	import Navigation from '../lib/Navigation.svelte';
-	import Footer from '../lib/Footer.svelte';
+
+	const LOGO = 'logo.svg'; // filepath from 'static' folder
 
 	const nav_links = [
 		{
@@ -24,7 +27,7 @@
 </svelte:head>
 
 <div class="root">
-	<Navigation {nav_links} />
+	<Navigation {nav_links} logo={LOGO} />
 
 	<main class="pt-3 pb-3 flex-grow-1">
 		<slot />

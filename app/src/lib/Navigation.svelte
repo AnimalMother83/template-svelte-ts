@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	export let logo_url = '';
+	export let logo = '';
 
 	interface NavLink {
 		title: string;
@@ -13,9 +13,9 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-light">
 	<div class="container-fluid">
-		{#if logo_url}
+		{#if logo}
 			<a class="navbar-brand" href="/">
-				<img src={logo_url} alt="Logo" height="35" style="margin-bottom: 6px" />
+				<img src={logo} alt="Logo" height="40" />
 			</a>
 		{/if}
 
@@ -32,9 +32,9 @@
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav justify-content-center">
+			<ul class="navbar-nav justify-content-start w-100">
 				{#each nav_links as link}
-					<li class="nav-item">
+					<li class="nav-item mx-1">
 						<a class="nav-link" class:active={$page.url.pathname === link.path} href={link.path}
 							>{link.title}</a
 						>
