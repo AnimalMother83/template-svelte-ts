@@ -29,6 +29,7 @@ const config = {
 		vite: {
 			publicDir: 'public',
 			server: {
+				host: true,
 				watch: {
 					usePolling: true
 				},
