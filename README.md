@@ -84,23 +84,3 @@ Note: Add recommended extensions to [exensions.json](./app/.vscode/extensions.js
 - Run `nvm use` in root folder and node will be changed to version in [.nvmrc](./app/.nvmrc).  
   Also check out Deeper Shell Integration [here](https://github.com/nvm-sh/nvm#deeper-shell-integration).
 
-## Infrastructure
-
-Infrastructure by code using [terraform](https://www.terraform.io/intro).
-
-#### Setup
-
-##### Mac OS
-
-- 1. Update brew `brew update`
-
-- 2. Install Terraform
-
-  - Add hashicorp tap `brew tap hashicorp/tap`
-  - Install `brew install hashicorp/tap/terraform`
-
-- 3. Install Azure CLI
-
-  - Install `brew install azure-cli`
-
-- 4. Login to Azure `az login`
