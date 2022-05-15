@@ -11,15 +11,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version-file: "app/.nvmrc"
+
       - name: Install dependencies
         run: npm install
+
       - name: Lint check
         run: npm run lint
+        continue-on-error: true
+
       - name: Svelte code check
         run: npm run check
+        continue-on-error: true
+        
       - name: Run tests
         run: npm run test
