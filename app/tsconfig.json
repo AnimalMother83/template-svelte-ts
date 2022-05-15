@@ -23,5 +23,6 @@
 	"rules": {
 		"strict": true
 	},
-	"exclude": ["src/**/*.spec.ts"]
+	"exclude": ["src/**/*.spec.ts"],
+	"extends": "./.svelte-kit/tsconfig.json"
 }
