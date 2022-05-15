@@ -1,6 +1,6 @@
-name: Terraform
+name: Terraform plan
 
-on: [push]
+on: [pull_request]
 
 defaults:
   run:
